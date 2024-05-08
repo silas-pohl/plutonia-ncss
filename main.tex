@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sullivan Business Report
+% LaTeX Template
+% Version 1.0 (May 5, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	CLASS, PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	a4paper, % Paper size, use either a4paper or letterpaper
+	12pt, % Default font size, the template is designed to look good at 12pt so it's best not to change this
+	%unnumberedsections, % Uncomment for no section numbering
+]{CSSullivanBusinessReport}
+
+\addbibresource{sample.bib} % BibLaTeX bibliography file
+
+%----------------------------------------------------------------------------------------
+%	REPORT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\reporttitle{National Cyber Security Strategy for Plutonia} % The report title to appear on the title page and page headers, do not create manual new lines here as this will carry over to page headers
+
+\reportsubtitle{A NCSS for the fictional country of Plutonia as part of the CYBER VT24 course at Stockholm University} % Report subtitle, include new lines if needed
+
+\reportauthors{NCSS created by:\\
+\smallskip Fernando Manuel Sanfeliz (xxxxXXXX@student.su.se)\\
+\smallskip Gustav Mönefors (xxxxXXXX@student.su.se)\\
+\smallskip Daniel Nils Braun (xxxxXXXX@student.su.se)\\
+\smallskip Silas Pohl (sipo6151@student.su.se)
+}% Report authors/group/department, include new lines if needed
+
+\reportdate{\today} % Report date, include new lines for additional information if needed
+
+\rightheadercontent{\includegraphics[width=3cm]{su.png}} % The content in the right header, you may want to add your own company logo or use your company/department name or leave this command empty for no right header content
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\thispagestyle{empty} % Suppress headers and footers on this page
+
+\begin{fullwidth} % Use the whole page width
+	\vspace*{-0.075\textheight} % Pull logo into the top margin
+	
+	\hfill\includegraphics[width=5cm]{su.png} % Company logo
+
+	\vspace{0.15\textheight} % Vertical whitespace
+
+	\parbox{0.9\fulltextwidth}{\fontsize{50pt}{52pt}\selectfont\raggedright\textbf{\reporttitle}\par} % Report title, intentionally at less than full width for nice wrapping. Adjust the width of the \parbox and the font size as needed for your title to look good.
+	
+	\vspace{0.03\textheight} % Vertical whitespace
+	
+	{\LARGE\textit{\textbf{\reportsubtitle}}\par} % Subtitle
+	
+	\vfill % Vertical whitespace
+	
+	{\Large\reportauthors\par} % Report authors, group or department
+	
+	\vfill\vfill\vfill % Vertical whitespace
+	
+	{\large\reportdate\par} % Report date
+\end{fullwidth}
+
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\begin{fullwidth}
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	SECTIONS
+%----------------------------------------------------------------------------------------
+\begin{justify}
+
+\section{Introduction}
+\subsection{Motivation }
+In an era defined by digital interconnectedness, safeguarding national security extends beyond physical borders to encompass the protection of digital infrastructure and sensitive data. Plutonia, a Southern European nation, faces a confluence of geopolitical complexities, economic aspirations, and technological advancements, necessitating a robust National Cyber Security Strategy (NCSS).
+
+This document outlines the rationale, objectives, and strategic initiatives for developing and implementing a tailored NCSS for Plutonia. Against a backdrop of democratic governance, reduced corruption, and EU membership, Plutonia confronts cyber threats from strategic NATO bases, neighboring superpowers, and a growing digital economy.
+
+With critical sectors increasingly reliant on digital technologies, cybersecurity awareness, public-private collaboration, and innovation are paramount. By uniting government, industry, academia, and civil society, Plutonia aims to mitigate risks, capitalize on digital opportunities, and emerge as a resilient digital ecosystem poised for sustainable growth and global leadership in cyberspace.
+
+\subsection{Current National Cybersecurity Landscape}
+Understanding Plutonia's cybersecurity landscape is critical to creating an effective national cybersecurity strategy. Located in Southern Europe, Plutonia faces external geopolitical complexities due to neighboring NATO bases and proximity to influential superpowers, requiring vigilance against potential cyber threats. While Plutonia has a diverse infrastructure, uneven Internet connectivity and the lack of a coordinated national cybersecurity strategy leave critical sectors vulnerable to cyber-attacks that could disrupt essential services and economic operations. Plutonia's democratic governance structure has made progress in reducing corruption. However, the lack of specific cybersecurity legislation poses challenges to enforcing data protection and privacy regulations, particularly in sectors such as healthcare. Plutonia faces cyber threats primarily from organized crime activities. Despite cooperation with international law enforcement agencies, strengthening domestic capabilities is essential to effectively counter emerging cyber threats. Plutonia's education system lacks an emphasis on cybersecurity education and awareness, exacerbating vulnerabilities. Addressing this gap, and tapping into the potential talent pool offered by the somewhat high unemployment rate, is critical to improving cyber resilience. Cyberattacks targeting critical sectors pose a significant threat to Plutonia's economy, underscoring the importance of protecting digital assets and promoting sustainable economic development through robust cybersecurity measures. 
+
+Plutonia's cybersecurity landscape presents challenges that require a strategic and collaborative approach. Addressing vulnerabilities, improving regulatory frameworks, promoting cybersecurity education, and strengthening public-private partnerships are key to protecting national interests and advancing cyber resilience initiatives.
+
+\subsection{Vision and Objectives}
+\subsubsection{Vision} To foster a secure, resilient, and innovative digital ecosystem that safeguards the interests, privacy, and prosperity of Plutonia and its citizens, ensuring a trusted and thriving cyber landscape in the face of evolving threats and challenges.
+\subsubsection{Objectives}
+\begin{enumerate}
+	\item \textbf{Enhance Cyber Resilience and Preparedness:} \\Given Plutonia's strategic geographic location and the presence of neighboring NATO bases and potential external threats, strengthening cyber resilience is essential. By investing in proactive measures such as threat intelligence gathering, incident response planning, and robust cyber defense mechanisms, Plutonia can mitigate the impact of cyber incidents and ensure the continuity of critical services, economic activities, and national security operations.
+	\item \textbf{Strengthen National Cyber Defense Capabilities:} \\Due to the prevalence of organized crime activities such as arms and drug smuggling, coupled with the proximity of superpower nations, it is important to enhance cyber defense capabilities. Plutonia must strengthen its cyber defense infrastructure, including the military, law enforcement, and critical infrastructure sectors, to protect against cyber threats to national interests and ensure the integrity, confidentiality, and availability of sensitive information and essential services. 
+	\item \textbf{Promote Cybersecurity Awareness and Education:} \\With moderate education levels and somewhat high unemployment rates, promoting cybersecurity awareness and digital literacy is imperative. By equipping citizens with the knowledge and skills to identify and mitigate cyber risks, Plutonia can strengthen its overall cyber resilience, reduce vulnerabilities, and mitigate the impact of cyber threats on individuals, businesses, and the economy.
+	\item \textbf{Foster Public-Private Partnerships:} \\In a landscape marked by a tradition of corruption and dissatisfaction among some citizens, promoting collaboration between government and private sector entities is essential for effective cybersecurity governance.. By establishing public-private partnerships, Plutonia can leverage collective expertise, resources, and information-sharing mechanisms to combat cyber threats, improve incident response capabilities, and increase the overall resilience of its digital ecosystem.
+	\item \textbf{Advance Research and Innovation in Cybersecurity:} \\Given Plutonia's aspirations for economic growth and stability, investing in cybersecurity research and innovation is critical. By fostering an environment conducive to cybersecurity research, development, and innovation, Plutonia can develop a skilled workforce, drive technological advancements, and position itself as a hub of cybersecurity excellence, staying ahead of evolving cyber threats and ensuring its digital sovereignty and economic prosperity.
+\end{enumerate}
+
+
+%----------------------------------------------------------------------------------------
+%	 REFERENCES/BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\addcontentsline{toc}{section}{Reference List} % Add the bibliography to the table of contents
+
+\begin{twothirdswidth} % Content in this environment to be at two-thirds of the whole page width
+	\printbibliography[title=Reference List] % Output the bibliography with a custom section title
+\end{twothirdswidth}
+
+%----------------------------------------------------------------------------------------
+%	APPENDICES
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\section*{Appendices}
+
+\begin{appendices}
+
+\section{Appendix Section}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget euismod pretium.
+
+\section{Appendix Section}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget euismod pretium.
+
+\section{Appendix Section}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget euismod pretium.
+
+\end{appendices}
+
+%----------------------------------------------------------------------------------------
+\end{justify}
+\end{fullwidth}
+\end{document}
